@@ -1,3 +1,4 @@
+//AQUI VAI TODOS OS COMPONENTS USADOS
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
