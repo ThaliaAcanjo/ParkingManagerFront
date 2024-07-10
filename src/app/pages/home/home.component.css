@@ -1,0 +1,12 @@
+.home-container{
+  width: auto;
+	/*background-color: rgb(255, 255, 255);*/
+  background-color: aqua;
+}
+
+.home-content{
+	/* width: 90%; */
+	/* margin: auto; */
+	padding: 10px 0;
+  background-color: black;
+}
