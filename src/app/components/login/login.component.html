@@ -7,9 +7,7 @@
         please login with your personal info
       </p>
       <button
-        id="signin"
-        class="btn btn-primary"
-      >
+        id="signin" class="btn btn-primary">
       <!-- (click)="signupTransition()"
         [ngClass]="{'sign-in-ts': isSignInActive }" -->
         sign in
@@ -54,7 +52,13 @@
           <i class="bi bi-lock icon-modify"></i>
           <input type="password" placeholder="Password" />
         </label>
-        <button class="btn btn-second">sign up</button>
+        <button
+            class="btn btn-second"
+            [routerLink]="['/createAcount']"
+            routerLinkActive="activated"
+            [routerLinkActiveOptions]="{exact: true}"
+            >
+          sign up</button>
       </form>
     </div>
     <!--  end second-column -->

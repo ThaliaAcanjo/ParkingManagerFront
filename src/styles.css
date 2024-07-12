@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .menu-container{
@@ -17,10 +18,10 @@
 }
 
 .home-container{
-  flex: 1;
+  /* flex: 1; */
   /* margin-left: 80px; */
-  margin: 10px 10px 10px 80px;
-  padding: 10px;
+  /* margin: 10px 10px 10px 80px; */
+  /* padding: 10px; */
 }
 
 
@@ -34,6 +35,22 @@
 
   --color-description: #fff;
   --color-description-second: gray;
+
+  --color-icons: #7f8c8d;
+  --color-inputs: #ecf0f1;
+
+  --color-brackground: #202020;
+
+  --color-card-padrao: #03d9ff;
+  --color-card-padrao2: #0289aa;
+
+  --color-vaga-livre:#04d485;
+  --color-vaga-livre2: #01835c;
+
+  --color-vaga-ocupada:#fd572e;
+  --color-vaga-ocupada2: #c00000;
+
   --espacamento: 1rem;
   --fonte-padrao: Arial, sans-serif;
+  /* #FF0077 */
 }

@@ -1,0 +1,15 @@
+<div class="vagas-content">
+  <div class="vagas-icon">
+    <i class="{{iconVeiculo}}"></i>
+  </div>
+  <div class="vagas-table">
+    <app-vaga
+      class="vaga-item"
+      *ngFor="let vaga of vagasCar; let i = index"
+      [item]="vaga[0]"
+      [status]="vaga[1] == 'livre'"
+      [tipoVeiculo]="tipoVeiculo"
+      [iconVeiculo]="iconVeiculo"
+    ></app-vaga>
+  </div>
+</div>

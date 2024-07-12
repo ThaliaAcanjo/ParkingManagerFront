@@ -1,12 +1,102 @@
-.home-container{
+.home-container {
   width: auto;
-	/*background-color: rgb(255, 255, 255);*/
-  background-color: aqua;
+  height: 100vh;
+  display: flex;
+  flex-direction: column; /* Empilha os itens verticalmente */
 }
 
-.home-content{
-	/* width: 90%; */
-	/* margin: auto; */
-	padding: 10px 0;
-  background-color: black;
+.home-header {
+  width: auto; /* Ajuste conforme necessário */
+  flex: 0 0 auto; /* Não cresce, não encolhe, tamanho automático */
+  /* background-color: rgb(197, 196, 196);  */
+  /* Cor de fundo para o header */
+  position: fixed; /* Fixa o header à esquerda */
+  top: 0; /* Alinha ao topo */
+  left: 0; /* Alinha à esquerda */
+  bottom: 0; /* Estende até o final da altura do container */
+  overflow-y: auto; /* Adiciona barra de rolagem vertical quando necessário */
+}
+
+.home-content {
+  flex: 1 1 auto; /* Cresce e encolhe, ocupando todo o espaço restante */
+  background-color: rgb(216, 216, 219);
+  /* var(--color-second); */
+  overflow-y: auto; /* Adiciona barra de rolagem vertical quando necessário */
+  margin-left: 80px;/*largura do menu*/
+}
+
+.home-cards{
+  display: flex;
+  flex-direction: row;
+  align-content: space-around;
+  flex-wrap: wrap;
+  align-content: flex-end;
+}
+
+.home-menu{
+  background-color: brown;
+  width: 100%;
+  height: 70px;
+}
+
+.home-first-content{
+  padding: 10px;
+}
+
+.home-second-content{
+  border-radius: 10px;
+  margin: 0 45px 20px 45px;
+  background-color: var(--color-second);
+}
+
+.home-second-content-cards{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.home-vagas-cards{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.home-vagas-card{
+  display: flex;
+  flex-direction: column;
+}
+
+.home-vagas-card-title{
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 10px;
+}
+
+.home-vagas.first-column{
+  margin: 20px 20px 20px 20px;
+  width: 280px;
+  border-radius: 10px;
+  min-height: 300px; /* altura inicial mínima */
+  background-color: var(--color-second);
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1), -2px -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.second-column{
+  background-color: blueviolet;
+}
+
+.home-middle-content{
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  box-shadow: /*2px 2px 4px rgba(0, 0, 0, 0.1), -2px -2px 4px rgba(0, 0, 0, 0.1);*/
+  0px 0px 0px rgba(0, 0, 0, 0.1), 0px -0 10px rgba(0, 0, 0, 0.1);
+}
+.middle-content-title{
+  text-align: center;
+  justify-content: center;
+  font-size: 20px;
 }

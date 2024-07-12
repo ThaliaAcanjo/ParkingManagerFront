@@ -1,9 +1,57 @@
 <div class="home-container">
-  <div class="home-content-header">
-
+  <div class="home-header">
+    <app-menu-sidebar></app-menu-sidebar>
   </div>
 
   <div class="home-content">
-    <p> aqui o corpo</p>
+    <div class="home-menu"></div>
+    <div class="home-first-content">
+      <div class="home-cards">
+        <app-cardinfo
+          className="degrade-padrao"
+          title="Total vagas"
+          valorTitle="130"
+          colorIcon="white"
+          classIcon="bi bi-car-front-fill"
+        ></app-cardinfo>
+        <app-cardinfo
+          className="degrade-livre"
+          title="Livres"
+          valorTitle="115"
+          colorIcon="white"
+          classIcon="bi bi-p-circle-fill"
+        ></app-cardinfo>
+        <app-cardinfo
+          className="degrade-ocupadas"
+          title="Ocupadas"
+          valorTitle="15"
+          colorIcon="white"
+          classIcon="bi bi-sign-no-parking-fill"
+        ></app-cardinfo>
+      </div>
+      <!-- home-cards -->
+    </div>
+    <!-- home-first-content -->
+
+    <div class="home-second-content">
+      <div class="home-middle-content">
+        <h2 class="middle-content-title">SITUAÇÃO DAS VAGAS</h2>
+      </div>
+
+      <div class="home-second-content-cards">
+        <div class="home-vagas-cards" *ngFor="let item of tiposVeiculos">
+          <div class="home-vagas-card">
+            <div class="home-vagas-card-title">
+              <p>{{ item[1] }}</p>
+            </div>
+            <div class="home-vagas first-column">
+              <app-vagas [tipoVeiculo]="item[0]" [iconVeiculo]="item[2]"></app-vagas>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- home-second-content -->
   </div>
+  <!-- home-content -->
 </div>

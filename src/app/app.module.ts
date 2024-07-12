@@ -8,6 +8,10 @@ import { HomeComponent } from './pages/home/home.component';
 import { MenuComponent } from './components/menu-sidebar/menu.component';
 import { LoginComponent } from './components/login/login.component';
 import { HeroComponent } from './components/hero/hero.component';
+import { CardInfoComponenet } from './components/cardInfo/cardinfo.component';
+import { VagasComponent } from './components/vagas/vagas.component';
+import { VagaComponent } from './components/vagas/vaga/vaga.component';
+import { EstabelecimentoFormComponent } from './pages/formEstab/formEstabelecimento.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +19,11 @@ import { HeroComponent } from './components/hero/hero.component';
     HomeComponent,
     MenuComponent,
     LoginComponent,
-    HeroComponent
+    HeroComponent,
+    CardInfoComponenet,
+    VagasComponent,
+    VagaComponent,
+    EstabelecimentoFormComponent
   ],
   imports: [
     BrowserModule,

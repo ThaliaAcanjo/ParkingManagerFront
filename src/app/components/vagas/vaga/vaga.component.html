@@ -1,0 +1,11 @@
+<div
+  class="vaga-content"
+  [ngStyle]="
+    status
+      ? { 'background-color': 'var(--color-vaga-livre)' }
+      : { 'background-color': 'var(--color-vaga-ocupada)' }
+  "
+>
+  <p *ngIf="status">{{ item }}</p>
+  <i *ngIf="!status" class="{{iconVeiculo}}"></i>
+</div>
